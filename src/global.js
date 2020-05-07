@@ -62,9 +62,14 @@ export const GlobalStyles = createGlobalStyle`
     }
 `
 
+export const StyledApp = styled.div`
+  text-align: center;
+  background-color: #f9f9f9;
+  color:black;
+`
 export const ScreenSize = styled.div`
-        margin: 1em auto;
-        border: 1px solid silver;
-        width: 1190px;
-        height: 700px;
+    margin: 1em auto;
+    border: 1px solid silver;
+    width: 1190px;
+    height: 700px;
 `

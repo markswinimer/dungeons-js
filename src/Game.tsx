@@ -3,7 +3,6 @@ import Phaser from 'phaser'
 import styled from 'styled-components'
 import { IonPhaser } from '@ion-phaser/react'
 import logo from './assets/logo.png'
-import { ThemeProvider } from 'styled-components';
 
 import LeftSection from './components/GameInterface/LeftSection';
 import { StyledGameInterface, MiddleSection, RightSection } from './components/GameInterface/GameInterface.styled';
@@ -12,8 +11,6 @@ import { GlobalStyles, ScreenSize } from './global';
 import { theme } from './theme';
 
 import GameInterface from './components/GameInterface/GameInterface';
-
-import './App.css'
 
 const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
     active: false,
@@ -124,10 +121,10 @@ class Game extends React.Component<Props, State> {
     render() {
         return (
             <Main>
-                <LeftSection
-                // Implementing Currently
-                />
+                <LeftSection/>
                 <GameScreen>
+
+                    {/* Game is rendered here */}
                     <IonPhaser game={game} initialize={true} />
                 </GameScreen>
             </Main>
